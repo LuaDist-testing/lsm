@@ -1,0 +1,11 @@
+,comment out the lines depending of what error you want to test (lexer, parser or execution errors)
+
+,lexer error
+,def @invalid_number 12.0x.22.0;
+
+,parser error
+sput 1 bep
+;
+
+,execution error
+badcall "foo";
